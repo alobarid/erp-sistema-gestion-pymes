@@ -1,27 +1,94 @@
-# erp-sistema-gestion-pymes
-ERP básico diseñado para pequeñas y medianas empresas (PyMEs), enfocado en la gestión de inventarios, listas de materiales (BOM) y almacenes. Este sistema fue desarrollado utilizando PHP y Laravel, con el objetivo de proporcionar una solución accesible y adaptable que permita a las PyMEs centralizar y optimizar sus operaciones.
-Requisitos del Sistema
-PHP >= 8.0
-Composer >= 2.0
-Servidor web compatible (XAMPP, WAMP, o similar)
-MySQL >= 5.7
-Hosting opcional (como Hostinger)
-Pasos de Instalación
-Clonar el Repositorio
-bash
-Copiar
-Editar
-git clone https://github.com/tuusuario/erp-sistema-gestion-pymes.git
-cd erp-sistema-gestion-pymes
-Instalar Dependencias
-Asegúrate de tener Composer instalado, luego ejecuta:
+<h1 align="center">📦 Sigmafy ERP</h1>
+<p align="center">Sistema de planificación y gestión para pequeñas y medianas empresas</p>
 
-bash
-Copiar
-Editar
-composer install
-Configurar el Archivo .env
-Copia el archivo de ejemplo .env.example y renómbralo como .env:
+---
+
+### 🧾 ¿Qué es Sigmafy?
+
+Sigmafy es un sistema ERP (Enterprise Resource Planning) diseñado para ayudar a pequeñas y medianas empresas a planificar, controlar y optimizar sus operaciones internas. Está construido sobre el framework Laravel y ofrece una solución moderna, modular y personalizable para la administración empresarial.
+
+---
+
+### 🎯 ¿Para qué sirve?
+
+Sigmafy permite gestionar de forma centralizada:
+
+- 📦 Productos, categorías e inventarios
+- 🛒 Ventas, compras y proveedores
+- 👤 Usuarios y roles de acceso
+- 📈 Reportes administrativos y operativos
+- 📄 Generación de documentos en PDF
+
+Su objetivo es mejorar la eficiencia operativa, reducir errores administrativos y facilitar la toma de decisiones mediante información en tiempo real.
+
+---
+
+### ⚙️ Estructura general
+
+El sistema está organizado por módulos independientes que se integran bajo una misma interfaz:
+
+- Módulo de productos
+- Módulo de ventas
+- Módulo de compras
+- Módulo de usuarios
+- Módulo de reportes
+
+Cada módulo puede personalizarse o ampliarse según las necesidades específicas del negocio.
+
+---
+
+### ✅ Ventajas principales
+
+- Interfaz amigable y en español
+- Basado en tecnologías modernas (Laravel + Bootstrap)
+- Fácil de instalar y mantener
+- Adaptable a cualquier tipo de empresa
+- Ideal para pruebas, implementaciones académicas o uso real
+
+---
+
+### 🔒 Acceso por roles
+
+El sistema incluye autenticación y control de permisos. Cada usuario accede únicamente a las funciones permitidas según su rol:
+
+- Administrador
+- Vendedor
+- Comprador
+
+Esto permite asegurar la información y delimitar responsabilidades.
+
+---
+
+### 📦 Aplicaciones reales
+
+Sigmafy puede usarse en entornos como:
+
+- Tiendas físicas
+- Distribuidoras
+- Ferreterías
+- Papelerías
+- Comercios de venta al por mayor o menor
+
+---
+
+### 📚 Documentación técnica
+
+> Para desarrolladores e implementadores, la documentación completa se encuentra en la carpeta `/docs`.
+
+Incluye:
+- Requisitos del sistema
+- Proceso de instalación
+- Estructura de base de datos
+- Instrucciones de despliegue
+
+---
+
+### 📝 Autor y créditos
+
+Desarrollado a partir del proyecto base de [alobarid](https://github.com/alobarid/erp-sistema-gestion-pymes), con mejoras adaptadas al contexto de PYMES latinoamericanas.
+
+---
+
 bash
 Copiar
 Editar
