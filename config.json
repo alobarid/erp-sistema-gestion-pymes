@@ -1,0 +1,93 @@
+{
+  "invshop": {
+    "version": "1.0.0",
+    "defaultConfig": {
+      "illegalItems": [
+        {
+          "id": "minecraft:bedrock",
+          "dimension": 0,
+          "description": "Bedrock blocks (all dimensions)"
+        },
+        {
+          "id": "minecraft:command_block",
+          "dimension": 0,
+          "description": "Command blocks (all dimensions)"
+        }
+      ],
+      "clearLag": {
+        "interval": 300,
+        "entityCategories": ["item", "projectile"],
+        "immunityTag": "clearlag_immune",
+        "enabled": true,
+        "maxEntitiesPerType": 100
+      },
+      "shop": {
+        "items": [
+          {
+            "name": "Diamond Sword",
+            "itemId": "minecraft:diamond_sword",
+            "price": 10,
+            "type": "item",
+            "icon": "textures/items/diamond_sword"
+          },
+          {
+            "name": "Healing Potion",
+            "command": "/effect %player% instant_health 1 1",
+            "price": 5,
+            "type": "command",
+            "icon": "textures/items/potion_bottle_heal"
+          }
+        ],
+        "defaultQuantity": 1,
+        "maxQuantity": 64,
+        "currency": "minecraft:emerald"
+      },
+      "protectionZones": {
+        "defaultSize": {
+          "x": 100,
+          "y": 40,
+          "z": 100
+        },
+        "features": {
+          "hostileMobSuppression": true,
+          "pvpProtection": true,
+          "explosionProtection": true
+        }
+      },
+      "ui": {
+        "textures": {
+          "mainMenu": "textures/ui/inventory_icon",
+          "shop": "textures/items/emerald",
+          "clearlag": "textures/items/clock_item",
+          "protection": "textures/items/totem_of_undying",
+          "illegal": "textures/items/barrier"
+        },
+        "colors": {
+          "success": "§a",
+          "warning": "§6",
+          "error": "§c",
+          "info": "§b",
+          "title": "§l§b"
+        }
+      }
+    },
+    "permissions": {
+      "admin": {
+        "manageShop": true,
+        "configureClearlag": true,
+        "manageIllegalItems": true,
+        "manageProtectionZones": true
+      },
+      "moderator": {
+        "manageShop": false,
+        "configureClearlag": true,
+        "manageIllegalItems": true,
+        "manageProtectionZones": false
+      },
+      "player": {
+        "useShop": true,
+        "viewProtectionZones": true
+      }
+    }
+  }
+}

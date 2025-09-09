@@ -1,0 +1,40 @@
+{
+  "name": "enhanced-invshop-system",
+  "version": "1.0.0",
+  "description": "Enhanced Inventory Shop and Clear-Lag Management System for Minecraft Bedrock Edition",
+  "main": "invshop.js",
+  "scripts": {
+    "lint": "eslint invshop.js --fix",
+    "format": "prettier --write invshop.js",
+    "validate": "node -c invshop.js"
+  },
+  "keywords": [
+    "minecraft",
+    "bedrock",
+    "shop",
+    "clear-lag",
+    "protection",
+    "server-management"
+  ],
+  "author": "Enhanced by GitHub Copilot",
+  "license": "MIT",
+  "dependencies": {
+    "@minecraft/server": "^1.0.0",
+    "@minecraft/server-ui": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alobarid/erp-sistema-gestion-pymes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alobarid/erp-sistema-gestion-pymes/issues"
+  },
+  "homepage": "https://github.com/alobarid/erp-sistema-gestion-pymes#readme"
+}
